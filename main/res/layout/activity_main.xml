@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#D1C4E9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- หัวข้อ -->
+
+        <!-- Student ID และ Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingBottom="20dp"
+            android:text="Grade Calaculating System"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student ID: " />
+
+            <EditText
+                android:id="@+id/etStudentID"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Section: " />
+
+            <EditText
+                android:id="@+id/etSection"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- Student Name -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student Name: " />
+
+            <EditText
+                android:id="@+id/etStudentName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- วิชาและคะแนน -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Thai:" />
+        <EditText android:id="@+id/etThai" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="number"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Science:" />
+        <EditText android:id="@+id/etScience" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="number"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Maths:" />
+        <EditText android:id="@+id/etMaths" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="number"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="English:" />
+        <EditText android:id="@+id/etEnglish" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="number"/>
+
+        <!-- ผลลัพธ์ -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Total Marks:" />
+        <EditText android:id="@+id/etTotalMarks" android:layout_width="match_parent" android:layout_height="wrap_content" android:focusable="false" android:background="#E0E0E0"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Percentage:" />
+        <EditText android:id="@+id/etPercentage" android:layout_width="match_parent" android:layout_height="wrap_content" android:focusable="false" android:background="#E0E0E0"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Grade:" />
+        <EditText android:id="@+id/etGrade" android:layout_width="match_parent" android:layout_height="wrap_content" android:focusable="false" android:background="#E0E0E0"/>
+
+        <!-- ปุ่มต่างๆ -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="20dp">
+
+            <Button
+                android:id="@+id/btnCalculate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calculate" />
+
+            <Button
+                android:id="@+id/btnClear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Clear" />
+
+            <Button
+                android:id="@+id/btnExit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Exit" />
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="92dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Save Data" />
+
+            <Button
+                android:id="@+id/btnShowStudents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Show Students" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
